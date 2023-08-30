@@ -1,0 +1,142 @@
+:root {
+	--font-family: -apple-system, Inter, system-ui;
+	--font-size: 14px;
+  --font-size-sm: 13px;
+
+  --clr-bg-primary: #16161C;
+  --clr-bg-secondary: #1A1C23;
+
+	--clr-primary: #F09383;
+	--clr-white: #FDF0ED;
+  --clr-grey: #2E303E;
+
+  --clr-url-primary: #1EAEAE;
+  --clr-url-secondary: #21BFC2;
+}
+
+/* Hints */
+.vimiumHintMarker {
+  background: var(--clr-bg-primary) !important;
+  padding: 4px 5px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.vimiumHintMarker span {
+	color: var(--clr-white) !important;
+	font-family: var(--font-family) !important;
+	text-shadow: none !important;
+}
+
+.vimiumHintMarker .matchingCharacter {
+  opacity: 0.7;
+}
+
+.vimiumHintMarker .matchingCharacter ~ span {
+	color: var(--clr-primary) !important;
+}
+
+/* Vomnibar */
+#vomnibar {
+  max-width: 700px;
+	background-color: var(--clr-bg-primary);
+	border: none;
+	box-shadow: none;
+
+  position: relative;
+  margin-inline: auto;
+
+  animation: show 200ms ease-in-out forwards;
+}
+
+.vomnibarSearchArea,
+#vomnibarInput{
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  color: var(--clr-white) !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size) !important;
+}
+
+.vomnibarSearchArea {
+  padding: 10px 30px !important;
+}
+
+#vomnibarInput{
+  padding: 0 !important;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* list */
+#vomnibar ul {
+  background: var(--clr-bg-primary);
+
+  margin: 0;
+  padding: 0;
+}
+
+/* list items */
+#vomnibar li {
+  border-bottom: 1px solid var(--clr-grey);
+}
+#vomnibar li.vomnibarSelected {
+  background-color: var(--clr-bg-secondary);
+}
+
+/* source */
+.vomnibarSource {
+  color: var(--clr-white) !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size) !important;
+
+  opacity: .6 !important;
+}
+
+/* title */
+.vomnibarTitle {
+  color: var(--clr-white) !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size) !important;
+}
+.vomnibarTitle .vomnibarMatch {
+  color: var(--clr-primary) !important;
+}
+
+/* url */
+.vomnibarUrl {
+  color: var(--clr-url-primary) !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--font-size-sm) !important;
+}
+.vomnibarUrl .vomnibarMatch {
+  color: var(--clr-url-secondary) !important;
+}
+
+/* HUD */
+.vimiumHUD,
+.vimiumHUDSearchArea,
+#hud,
+#hud-find-input {
+  color: var(--clr-white) !important;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  background-color: var(--clr-bg-primary) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#hud-match-count {
+  opacity: .7;
+}
