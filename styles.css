@@ -67,6 +67,11 @@
   padding: 0 !important;
 }
 
+#vomnibarInput::selection {
+  background-color: var(--clr-primary);
+  color: var(--clr-grey);
+}
+
 @keyframes show {
   0% {
     transform: translateY(50px);
