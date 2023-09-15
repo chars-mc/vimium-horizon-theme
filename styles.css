@@ -94,6 +94,7 @@
 /* list items */
 #vomnibar li {
   border-bottom: 1px solid var(--clr-grey);
+  user-select: none;
 }
 #vomnibar li.vomnibarSelected {
   background-color: var(--clr-bg-secondary);
