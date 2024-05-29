@@ -1,30 +1,30 @@
 :root {
-	--font-family: -apple-system, Inter, system-ui;
-	--font-size: 14px;
-  --font-size-sm: 13px;
+	--vimium-font-family: -apple-system, Inter, system-ui;
+	--vimium-font-size: 14px;
+  --vimium-font-size-sm: 13px;
 
-  --clr-bg-primary: #16161C;
-  --clr-bg-secondary: #1A1C23;
+  --vimium-clr-bg-primary: #16161C;
+  --vimium-clr-bg-secondary: #1A1C23;
 
-	--clr-primary: #F09383;
-	--clr-white: #FDF0ED;
-  --clr-grey: #2E303E;
+	--vimium-clr-primary: #F09383;
+	--vimium-clr-white: #FDF0ED;
+  --vimium-clr-grey: #2E303E;
 
-  --clr-url-primary: #1EAEAE;
-  --clr-url-secondary: #21BFC2;
+  --vimium-clr-url-primary: #1EAEAE;
+  --vimium-clr-url-secondary: #21BFC2;
 }
 
 /* Hints */
 .vimiumHintMarker {
-  background: var(--clr-bg-primary) !important;
+  background: var(--vimium-clr-bg-primary) !important;
   padding: 4px 5px !important;
   border: none !important;
   box-shadow: none !important;
 }
 
 .vimiumHintMarker span {
-	color: var(--clr-white) !important;
-	font-family: var(--font-family) !important;
+	color: var(--vimium-clr-white) !important;
+	font-family: var(--vimium-font-family) !important;
 	text-shadow: none !important;
 }
 
@@ -33,13 +33,13 @@
 }
 
 .vimiumHintMarker .matchingCharacter ~ span {
-	color: var(--clr-primary) !important;
+	color: var(--vimium-clr-primary) !important;
 }
 
 /* Vomnibar */
 #vomnibar {
   max-width: 700px;
-	background-color: var(--clr-bg-primary);
+	background-color: var(--vimium-clr-bg-primary);
 	border: none;
 	box-shadow: none;
 
@@ -56,9 +56,9 @@
   background-color: transparent !important;
   box-shadow: none !important;
 
-  color: var(--clr-white) !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size) !important;
+  color: var(--vimium-clr-white) !important;
+  font-family: var(--vimium-font-family) !important;
+  font-size: var(--vimium-font-size) !important;
 }
 
 .vomnibarSearchArea {
@@ -70,8 +70,8 @@
 }
 
 #vomnibarInput::selection {
-  background-color: var(--clr-primary);
-  color: var(--clr-grey);
+  background-color: var(--vimium-clr-primary);
+  color: var(--vimium-clr-grey);
 }
 
 @keyframes show {
@@ -87,7 +87,7 @@
 
 /* list */
 #vomnibar ul {
-  background: var(--clr-bg-primary);
+  background: var(--vimium-clr-bg-primary);
 
   margin: 0;
   padding: 0;
@@ -95,40 +95,40 @@
 
 /* list items */
 #vomnibar li {
-  border-bottom: 1px solid var(--clr-grey);
+  border-bottom: 1px solid var(--vimium-clr-grey);
   user-select: none;
 }
 #vomnibar li.vomnibarSelected {
-  background-color: var(--clr-bg-secondary);
+  background-color: var(--vimium-clr-bg-secondary);
 }
 
 /* source */
 .vomnibarSource {
-  color: var(--clr-white) !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size) !important;
+  color: var(--vimium-clr-white) !important;
+  font-family: var(--vimium-font-family) !important;
+  font-size: var(--vimium-font-size) !important;
 
   opacity: .6 !important;
 }
 
 /* title */
 .vomnibarTitle {
-  color: var(--clr-white) !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size) !important;
+  color: var(--vimium-clr-white) !important;
+  font-family: var(--vimium-font-family) !important;
+  font-size: var(--vimium-font-size) !important;
 }
 .vomnibarTitle .vomnibarMatch {
-  color: var(--clr-primary) !important;
+  color: var(--vimium-clr-primary) !important;
 }
 
 /* url */
 .vomnibarUrl {
-  color: var(--clr-url-primary) !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size-sm) !important;
+  color: var(--vimium-clr-url-primary) !important;
+  font-family: var(--vimium-font-family) !important;
+  font-size: var(--vimium-font-size-sm) !important;
 }
 .vomnibarUrl .vomnibarMatch {
-  color: var(--clr-url-secondary) !important;
+  color: var(--vimium-clr-url-secondary) !important;
 }
 
 /* HUD */
@@ -136,11 +136,11 @@
 .vimiumHUDSearchArea,
 #hud,
 #hud-find-input {
-  color: var(--clr-white) !important;
-  font-family: var(--font-family);
-  font-size: var(--font-size);
+  color: var(--vimium-clr-white) !important;
+  font-family: var(--vimium-font-family);
+  font-size: var(--vimium-font-size);
 
-  background-color: var(--clr-bg-primary) !important;
+  background-color: var(--vimium-clr-bg-primary) !important;
   border: none !important;
   box-shadow: none !important;
 }
